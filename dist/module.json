@@ -1,0 +1,12 @@
+{
+  "name": "@captcha-la/nuxt",
+  "configKey": "captchala",
+  "compatibility": {
+    "nuxt": ">=3.0.0"
+  },
+  "version": "1.0.0",
+  "builder": {
+    "@nuxt/module-builder": "1.0.4",
+    "unbuild": "3.6.1"
+  }
+}

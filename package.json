@@ -1,0 +1,58 @@
+{
+  "name": "@captcha-la/nuxt",
+  "version": "1.0.0",
+  "description": "Official Captchala CAPTCHA Nuxt module - client-only CAPTCHA component and server-side token validation for Nuxt applications",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
+    }
+  },
+  "main": "./dist/module.mjs",
+  "types": "./dist/types.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nuxt-module-build build",
+    "prepack": "nuxt-module-build build",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "dev": "nuxi dev playground",
+    "playground:build": "nuxi build playground"
+  },
+  "dependencies": {
+    "@captcha-la/vue": "^1.1.0",
+    "@nuxt/kit": "^3.15.0 || ^4.0.0",
+    "defu": "^6.1.4"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "^1.0.4",
+    "nuxt": "^3.21.0",
+    "typescript": "~5.9.3",
+    "vue-tsc": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Captcha-La/nuxt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Captcha-La/nuxt/issues"
+  },
+  "homepage": "https://docs.captcha.la/sdk/web/nuxt",
+  "keywords": [
+    "captcha",
+    "captchala",
+    "nuxt",
+    "nuxt-module",
+    "vue",
+    "bot-protection",
+    "security",
+    "verification"
+  ],
+  "author": "CaptchaLa <supply@captcha.la>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

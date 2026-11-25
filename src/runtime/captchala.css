@@ -1,0 +1,11 @@
+/* Reserve the bar's height before the SDK has loaded. */
+.captchala-container {
+  min-height: 50px;
+}
+.captchala-container--bind {
+  min-height: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
