@@ -1,6 +1,6 @@
 {
   "name": "@captcha-la/nuxt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Captchala CAPTCHA Nuxt module - client-only CAPTCHA component and server-side token validation for Nuxt applications",
   "type": "module",
   "exports": {

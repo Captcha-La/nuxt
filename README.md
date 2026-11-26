@@ -1,6 +1,6 @@
 # @captcha-la/nuxt
 
-[English](./README.md) · [简体中文](./README.zh-CN.md)
+**English** · [简体中文](https://github.com/Captcha-La/nuxt/blob/main/README.zh-CN.md) · [日本語](https://github.com/Captcha-La/nuxt/blob/main/README.ja.md) · [한국어](https://github.com/Captcha-La/nuxt/blob/main/README.ko.md) · [Español](https://github.com/Captcha-La/nuxt/blob/main/README.es.md) · [Português (BR)](https://github.com/Captcha-La/nuxt/blob/main/README.pt-BR.md) · [Deutsch](https://github.com/Captcha-La/nuxt/blob/main/README.de.md)
 
 Official Captchala CAPTCHA Nuxt module - Smart CAPTCHA protection for your Nuxt applications.
 

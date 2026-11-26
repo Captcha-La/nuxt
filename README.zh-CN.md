@@ -1,6 +1,6 @@
 # @captcha-la/nuxt
 
-[English](./README.md) · [简体中文](./README.zh-CN.md)
+[English](https://github.com/Captcha-La/nuxt/blob/main/README.md) · **简体中文** · [日本語](https://github.com/Captcha-La/nuxt/blob/main/README.ja.md) · [한국어](https://github.com/Captcha-La/nuxt/blob/main/README.ko.md) · [Español](https://github.com/Captcha-La/nuxt/blob/main/README.es.md) · [Português (BR)](https://github.com/Captcha-La/nuxt/blob/main/README.pt-BR.md) · [Deutsch](https://github.com/Captcha-La/nuxt/blob/main/README.de.md)
 
 Captchala 验证码 Nuxt 官方模块 —— 为你的 Nuxt 应用提供智能 CAPTCHA 防护。
 
