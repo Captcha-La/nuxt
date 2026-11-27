@@ -75,7 +75,6 @@ function handleError(error) {
 | `appSecret` | `string` | `''` | 서버 유틸용 앱 시크릿(private 런타임 설정). `NUXT_CAPTCHALA_APP_SECRET` 사용을 권장합니다 |
 | `componentName` | `string` | `'Captchala'` | 자동 등록되는 컴포넌트 이름 |
 | `serverUtils` | `boolean` | `true` | 서버 유틸 등록 여부 |
-| `verifyUrl` | `string` | `'https://verify.captcha.la'` | 검증 API의 기본 URL |
 
 ## Props
 

@@ -15,8 +15,6 @@ interface ModuleOptions {
     componentName?: string;
     /** Register the `validateCaptchalaToken` / `issueCaptchalaServerToken` server utils. Default `true`. */
     serverUtils?: boolean;
-    /** Base URL of the validation API. Default `https://verify.captcha.la`. */
-    verifyUrl?: string;
 }
 declare const _default: _nuxt_schema.NuxtModule<ModuleOptions, ModuleOptions, false>;
 

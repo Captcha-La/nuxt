@@ -9,8 +9,7 @@ const module$1 = defineNuxtModule({
   },
   defaults: {
     componentName: "Captchala",
-    serverUtils: true,
-    verifyUrl: "https://verify.captcha.la"
+    serverUtils: true
   },
   setup(options, nuxt) {
     const resolver = createResolver(import.meta.url);
@@ -20,8 +19,7 @@ const module$1 = defineNuxtModule({
     });
     runtimeConfig.captchala = defu(runtimeConfig.captchala, {
       appKey: options.appKey || "",
-      appSecret: options.appSecret || "",
-      verifyUrl: options.verifyUrl || "https://verify.captcha.la"
+      appSecret: options.appSecret || ""
     });
     addComponent({
       name: options.componentName || "Captchala",

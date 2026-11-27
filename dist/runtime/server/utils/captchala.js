@@ -1,5 +1,6 @@
 import { getRequestIP } from "h3";
 import { useRuntimeConfig } from "#imports";
+const API_URL = "https://verify.captcha.la";
 function credentials(event) {
   const config = useRuntimeConfig(event);
   const priv = config.captchala || {};
@@ -10,17 +11,16 @@ function credentials(event) {
       "[@captcha-la/nuxt] Missing app key or secret. Set NUXT_PUBLIC_CAPTCHALA_APP_KEY (or captchala.appKey) and NUXT_CAPTCHALA_APP_SECRET."
     );
   }
-  const baseUrl = String(priv.verifyUrl || "https://verify.captcha.la").replace(/\/+$/, "");
-  return { appKey, appSecret, baseUrl };
+  return { appKey, appSecret };
 }
 export async function validateCaptchalaToken(event, passToken, options = {}) {
   if (!passToken || typeof passToken !== "string") {
     return { valid: false, code: -1, message: "Missing pass_token" };
   }
-  const { appKey, appSecret, baseUrl } = credentials(event);
+  const { appKey, appSecret } = credentials(event);
   const clientIp = options.clientIp === false ? void 0 : options.clientIp || getRequestIP(event, { xForwardedFor: !!options.xForwardedFor });
   try {
-    const res = await $fetch(`${baseUrl}/v1/validate`, {
+    const res = await $fetch(`${API_URL}/v1/validate`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,12 +42,12 @@ export async function validateCaptchalaToken(event, passToken, options = {}) {
   }
 }
 export async function issueCaptchalaServerToken(event, options = {}) {
-  const { appKey, appSecret, baseUrl } = credentials(event);
+  const { appKey, appSecret } = credentials(event);
   const body = new URLSearchParams({
     action: options.action || "default",
     ttl: String(options.ttl ?? 300)
   });
-  const res = await $fetch(`${baseUrl}/v1/server/challenge/issue`, {
+  const res = await $fetch(`${API_URL}/v1/server/challenge/issue`, {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",

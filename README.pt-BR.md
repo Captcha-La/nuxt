@@ -75,7 +75,6 @@ placeholder vazio, e o SDK é carregado no navegador.
 | `appSecret` | `string` | `''` | App secret para os utilitários de servidor (runtime config privada). Prefira `NUXT_CAPTCHALA_APP_SECRET` |
 | `componentName` | `string` | `'Captchala'` | Nome do componente registrado automaticamente |
 | `serverUtils` | `boolean` | `true` | Registra os utilitários de servidor |
-| `verifyUrl` | `string` | `'https://verify.captcha.la'` | URL base da API de validação |
 
 ## Props
 

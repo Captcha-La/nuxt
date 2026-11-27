@@ -16,8 +16,6 @@ export interface ModuleOptions {
   componentName?: string
   /** Register the `validateCaptchalaToken` / `issueCaptchalaServerToken` server utils. Default `true`. */
   serverUtils?: boolean
-  /** Base URL of the validation API. Default `https://verify.captcha.la`. */
-  verifyUrl?: string
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -28,8 +26,7 @@ export default defineNuxtModule<ModuleOptions>({
   },
   defaults: {
     componentName: 'Captchala',
-    serverUtils: true,
-    verifyUrl: 'https://verify.captcha.la'
+    serverUtils: true
   },
   setup(options, nuxt) {
     const resolver = createResolver(import.meta.url)
@@ -39,11 +36,10 @@ export default defineNuxtModule<ModuleOptions>({
     runtimeConfig.public.captchala = defu(runtimeConfig.public.captchala as any, {
       appKey: options.appKey || ''
     })
-    // Private (server only): key, secret and API base URL.
+    // Private (server only): key and secret.
     runtimeConfig.captchala = defu(runtimeConfig.captchala as any, {
       appKey: options.appKey || '',
-      appSecret: options.appSecret || '',
-      verifyUrl: options.verifyUrl || 'https://verify.captcha.la'
+      appSecret: options.appSecret || ''
     })
 
     // Client-only: nothing is rendered on the server, the SDK loads in the browser.

@@ -74,7 +74,6 @@ function handleError(error) {
 | `appSecret` | `string` | `''` | 服务端工具使用的 app secret（私有 runtime config）。推荐用 `NUXT_CAPTCHALA_APP_SECRET` |
 | `componentName` | `string` | `'Captchala'` | 自动注册的组件名 |
 | `serverUtils` | `boolean` | `true` | 是否注册服务端工具函数 |
-| `verifyUrl` | `string` | `'https://verify.captcha.la'` | 校验 API 的基础 URL |
 
 ## Props
 

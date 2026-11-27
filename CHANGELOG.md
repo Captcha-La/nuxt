@@ -2,7 +2,8 @@
 
 ## 1.0.1
 
-- README in Japanese, Korean, Spanish, Portuguese (BR) and German, with a language switcher in every README. No code changes.
+- README in Japanese, Korean, Spanish, Portuguese (BR) and German, with a language switcher in every README.
+- The server utils always call the CaptchaLa API endpoint.
 
 ## 1.0.0
 

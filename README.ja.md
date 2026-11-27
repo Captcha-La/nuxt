@@ -75,7 +75,6 @@ SDK はブラウザで読み込まれます。
 | `appSecret` | `string` | `''` | サーバーユーティリティ用のアプリシークレット（プライベート runtime config）。`NUXT_CAPTCHALA_APP_SECRET` の利用を推奨します |
 | `componentName` | `string` | `'Captchala'` | 自動登録されるコンポーネントの名前 |
 | `serverUtils` | `boolean` | `true` | サーバーユーティリティを登録するかどうか |
-| `verifyUrl` | `string` | `'https://verify.captcha.la'` | 検証 API のベース URL |
 
 ## Props
 
